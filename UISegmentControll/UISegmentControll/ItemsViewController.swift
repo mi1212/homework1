@@ -11,9 +11,9 @@ class ItemsViewController: UIViewController {
     
     let itemsArray = ["one", "two", "three"]
     let colorsArray = [
-        UIColor.systemBlue,
-        UIColor.cyan,
-        UIColor.lightGray
+        UIColor.systemGray,
+        UIColor.systemCyan,
+        UIColor.systemIndigo
     ]
     private lazy var itemsSegmentControl: UISegmentedControl = {
         let segmentControll = UISegmentedControl(items: itemsArray)
@@ -34,7 +34,7 @@ class ItemsViewController: UIViewController {
         self.itemsSegmentControl.addTarget(self, action: #selector(selectValues), for: .valueChanged)
         NSLayoutConstraint.activate([
             itemsSegmentControl.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor),
-            itemsSegmentControl.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
+            itemsSegmentControl.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
             itemsSegmentControl.heightAnchor.constraint(equalToConstant: 30),
             itemsSegmentControl.widthAnchor.constraint(equalToConstant: 250),
         ])

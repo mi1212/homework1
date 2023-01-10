@@ -12,6 +12,9 @@
 		FD991144296DCA7D00B70BB0 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991143296DCA7D00B70BB0 /* ItemsViewController.swift */; };
 		FD991149296DCA7E00B70BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD991148296DCA7E00B70BB0 /* Assets.xcassets */; };
 		FD99114C296DCA7E00B70BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD99114A296DCA7E00B70BB0 /* LaunchScreen.storyboard */; };
+		FD991154296DD52200B70BB0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991153296DD52200B70BB0 /* TabBarController.swift */; };
+		FD991156296DD86400B70BB0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991155296DD86400B70BB0 /* CartViewController.swift */; };
+		FD991158296DD90A00B70BB0 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FD991148296DCA7E00B70BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD99114B296DCA7E00B70BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD99114D296DCA7E00B70BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD991153296DD52200B70BB0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FD991155296DD86400B70BB0 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				FD99113F296DCA7D00B70BB0 /* AppDelegate.swift */,
 				FD991141296DCA7D00B70BB0 /* SceneDelegate.swift */,
 				FD991143296DCA7D00B70BB0 /* ItemsViewController.swift */,
+				FD991153296DD52200B70BB0 /* TabBarController.swift */,
+				FD991155296DD86400B70BB0 /* CartViewController.swift */,
+				FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */,
 				FD991148296DCA7E00B70BB0 /* Assets.xcassets */,
 				FD99114A296DCA7E00B70BB0 /* LaunchScreen.storyboard */,
 				FD99114D296DCA7E00B70BB0 /* Info.plist */,
@@ -135,7 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD991144296DCA7D00B70BB0 /* ItemsViewController.swift in Sources */,
+				FD991154296DD52200B70BB0 /* TabBarController.swift in Sources */,
+				FD991156296DD86400B70BB0 /* CartViewController.swift in Sources */,
 				FD991140296DCA7D00B70BB0 /* AppDelegate.swift in Sources */,
+				FD991158296DD90A00B70BB0 /* FavoriteViewController.swift in Sources */,
 				FD991142296DCA7D00B70BB0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
