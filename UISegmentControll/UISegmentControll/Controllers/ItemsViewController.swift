@@ -19,25 +19,18 @@ class ItemsViewController: UIViewController {
     
     let itemImageView = CommonUIImageView()
     
-    let descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.backgroundColor = .clear
-        label.numberOfLines = 0
-        label.baselineAdjustment = .alignBaselines
-        label.font = UIFont.systemFont(ofSize: 16, weight: .light)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    let descriptionLabel = CommonUILabel()
     
     private lazy var itemsSegmentControl: UISegmentedControl = {
         let segmentControll = UISegmentedControl(items: itemsArray)
         segmentControll.translatesAutoresizingMaskIntoConstraints = false
+        segmentControll.apportionsSegmentWidthsByContent = true
+        segmentControll.selectedSegmentTintColor = .systemTeal
         return segmentControll
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         setupLayout()
         itemsSegmentControl.selectedSegmentIndex = 0
         setupData(index: 0)

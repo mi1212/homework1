@@ -11,7 +11,7 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        self.view.backgroundColor =  .systemGray6
         
         let vcArray = [
         setupTabBar(viewController: ItemsViewController(), title: "items", image: "bolt"),

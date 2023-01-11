@@ -11,7 +11,6 @@ class CommonUIImageView: UIImageView {
     
     init() {
         super.init(frame: .zero)
-        print("init")
         setupProperts()
     }
     
@@ -20,7 +19,7 @@ class CommonUIImageView: UIImageView {
     }
     
     private func setupProperts() {
-        self.backgroundColor = .white
+        self.backgroundColor = .systemGray6
         self.clipsToBounds = true
         self.contentMode = .scaleAspectFit
         self.translatesAutoresizingMaskIntoConstraints = false

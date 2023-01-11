@@ -16,6 +16,9 @@
 		FD991154296DD52200B70BB0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991153296DD52200B70BB0 /* TabBarController.swift */; };
 		FD991156296DD86400B70BB0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991155296DD86400B70BB0 /* CartViewController.swift */; };
 		FD991158296DD90A00B70BB0 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */; };
+		FD99115A296F155000B70BB0 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991159296F155000B70BB0 /* ItemView.swift */; };
+		FD99115F296F193300B70BB0 /* CommonUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD99115E296F193300B70BB0 /* CommonUILabel.swift */; };
+		FD991161296F1E1400B70BB0 /* CommonUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD991160296F1E1400B70BB0 /* CommonUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		FD991153296DD52200B70BB0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FD991155296DD86400B70BB0 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		FD991159296F155000B70BB0 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		FD99115E296F193300B70BB0 /* CommonUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUILabel.swift; sourceTree = "<group>"; };
+		FD991160296F1E1400B70BB0 /* CommonUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +70,43 @@
 			children = (
 				FD99113F296DCA7D00B70BB0 /* AppDelegate.swift */,
 				FD991141296DCA7D00B70BB0 /* SceneDelegate.swift */,
-				FD991143296DCA7D00B70BB0 /* ItemsViewController.swift */,
-				FD991153296DD52200B70BB0 /* TabBarController.swift */,
-				FD991155296DD86400B70BB0 /* CartViewController.swift */,
-				FD0CCF9B296ECCAA0004CE8B /* CommonUIImageView.swift */,
-				FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */,
+				FD99115B296F186400B70BB0 /* Controllers */,
+				FD99115D296F18A400B70BB0 /* Views */,
+				FD99115C296F189900B70BB0 /* CommonUI */,
 				FD991148296DCA7E00B70BB0 /* Assets.xcassets */,
 				FD99114A296DCA7E00B70BB0 /* LaunchScreen.storyboard */,
 				FD99114D296DCA7E00B70BB0 /* Info.plist */,
 			);
 			path = UISegmentControll;
+			sourceTree = "<group>";
+		};
+		FD99115B296F186400B70BB0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD991153296DD52200B70BB0 /* TabBarController.swift */,
+				FD991143296DCA7D00B70BB0 /* ItemsViewController.swift */,
+				FD991157296DD90A00B70BB0 /* FavoriteViewController.swift */,
+				FD991155296DD86400B70BB0 /* CartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD99115C296F189900B70BB0 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				FD0CCF9B296ECCAA0004CE8B /* CommonUIImageView.swift */,
+				FD99115E296F193300B70BB0 /* CommonUILabel.swift */,
+				FD991160296F1E1400B70BB0 /* CommonUIButton.swift */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		FD99115D296F18A400B70BB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD991159296F155000B70BB0 /* ItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +181,12 @@
 			files = (
 				FD0CCF9C296ECCAA0004CE8B /* CommonUIImageView.swift in Sources */,
 				FD991144296DCA7D00B70BB0 /* ItemsViewController.swift in Sources */,
+				FD991161296F1E1400B70BB0 /* CommonUIButton.swift in Sources */,
 				FD991154296DD52200B70BB0 /* TabBarController.swift in Sources */,
+				FD99115A296F155000B70BB0 /* ItemView.swift in Sources */,
 				FD991156296DD86400B70BB0 /* CartViewController.swift in Sources */,
 				FD991140296DCA7D00B70BB0 /* AppDelegate.swift in Sources */,
+				FD99115F296F193300B70BB0 /* CommonUILabel.swift in Sources */,
 				FD991158296DD90A00B70BB0 /* FavoriteViewController.swift in Sources */,
 				FD991142296DCA7D00B70BB0 /* SceneDelegate.swift in Sources */,
 			);
