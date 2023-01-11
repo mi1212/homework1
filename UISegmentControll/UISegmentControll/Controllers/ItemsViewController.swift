@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ItemsViewController: UIViewController {
+final class ItemsViewController: UIViewController {
     
     let itemsArray = ["футболки", "значки", "головные уборы"]
     
