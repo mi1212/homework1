@@ -12,7 +12,7 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor =  .systemGray6
-        
+        self.tabBar.tintColor = .systemTeal
         let vcArray = [
         setupTabBar(viewController: ItemsViewController(), title: "items", image: "bolt"),
         setupTabBar(viewController: FavoriteViewController(), title: "favorites", image: "bolt.heart"),
@@ -28,6 +28,7 @@ final class TabBarController: UITabBarController {
         vc.tabBarItem.title = title
         vc.tabBarItem.image = UIImage(systemName: image)
         return vc
+        
     }
 
 }
