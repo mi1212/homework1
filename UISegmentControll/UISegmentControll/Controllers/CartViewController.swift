@@ -9,6 +9,10 @@ import UIKit
 
 final class CartViewController: UIViewController {
 
+    let items = ["Test UIActivityViewController"]
+    
+    
+    
     let item = ItemView()
     
     let stackView: UIStackView = {

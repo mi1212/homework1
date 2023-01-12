@@ -11,6 +11,18 @@ final class ItemsViewController: UIViewController {
     
     let itemsArray = ["футболки", "значки", "головные уборы"]
     
+    var itemSegmentControllChosed = 0 {
+        didSet {
+            setupData(index: itemSegmentControllChosed)
+        }
+    }
+    
+    let picker: UIPickerView = {
+        let picker = UIPickerView()
+        
+        return picker
+    }()
+    
     let descriptionsArray = [
         "Этот футбич - настоящая икона стиля для всех, кто не ищет уютных манежей зимой и прорезиненных стадионов летом. Для тех, кто несмотря на погоду за окном и расшатанную собянинскую плитку выходит на улицу раздавать десятки километров ежедневно. Если вы меня слышите, то вы и есть Runderground!",
         "Друзья, представляем вашему вниманию значки-отличия за приверженность к активному образу жизни.    Они не только выделят вас из толпы, но и помогут всегда узнать таких же братишек, мужских и женских, в бурном потоке городских масс. Это как ожог на тыльной стороне ладони в Бойцовском клубе или кроссовки «хока», мелькнувшие в переполненном утреннем метро, но только круче и в виде моднейшего значка. Добро пожаловать в клуб!",
@@ -32,8 +44,9 @@ final class ItemsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        itemsSegmentControl.selectedSegmentIndex = 0
-        setupData(index: 0)
+        setupNavigationController()
+        itemsSegmentControl.selectedSegmentIndex = itemSegmentControllChosed
+        setupData(index: itemSegmentControllChosed)
         self.itemsSegmentControl.addTarget(self, action: #selector(selectValues), for: .valueChanged)
     }
     
@@ -64,10 +77,32 @@ final class ItemsViewController: UIViewController {
         ])
     }
     
+    private func setupNavigationController() {
+
+        self.navigationController?.navigationBar.tintColor = .systemTeal
+        
+        let imageShareButton = UIImage(systemName: "square.and.arrow.up")
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: imageShareButton,
+            style: .plain,
+            target: self,
+            action: #selector(tapShareButton)
+        )
+    }
+    
+    @objc private func tapShareButton() {
+        let items = [descriptionsArray[itemSegmentControllChosed]]
+        
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        present(ac, animated: true)
+    }
+    
     @objc private func selectValues(target: UISegmentedControl) {
         if target == self.itemsSegmentControl {
             let segmentIndex = target.selectedSegmentIndex
-            setupData(index: segmentIndex)
+            self.itemSegmentControllChosed = segmentIndex
         }
     }
     
