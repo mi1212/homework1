@@ -72,7 +72,9 @@ final class CartViewController: UIViewController {
     private func setupProperts() {
         item.image.image = UIImage(named: "tshirt")
         item.titleLabel.text = "Футболка"
+        
         priceLabel.text = "1450 руб"
+        
         titleLabel.text = "Цена:"
         
         checkoutButton.setTitle("Купить", for: .normal)
